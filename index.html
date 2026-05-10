@@ -50,18 +50,44 @@
       transform: translateY(-5px);
     }
 
-    .whatsapp-float {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background-color: #25d366;
-      color: white;
-      border-radius: 50%;
-      padding: 15px 18px;
-      font-size: 24px;
-      text-decoration: none;
-      box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
-    }
+.floating-buttons {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 10px; /* espaço entre os botões */
+  z-index: 999;
+}
+
+/* WhatsApp */
+.whatsapp-float {
+  background: linear-gradient(45deg, #25d366, #1ebe5d);
+  color: white;
+  border-radius: 50%;
+  padding: 16px 20px;
+  font-size: 22px;
+  text-decoration: none;
+  box-shadow: 0px 5px 15px rgba(0,0,0,0.4);
+  transition: 0.3s;
+}
+
+/* Gmail */
+.gmail-float {
+  background: linear-gradient(45deg, #ea4335, #c5221f);
+  color: white;
+  border-radius: 50%;
+  padding: 16px 20px;
+  font-size: 22px;
+  text-decoration: none;
+  box-shadow: 0px 5px 15px rgba(0,0,0,0.4);
+  transition: 0.3s;
+}
+
+/* Hover geral */
+.whatsapp-float:hover,
+.gmail-float:hover {
+  transform: scale(1.1);
+}
   </style>
 </head>
 
@@ -144,8 +170,13 @@
 <!-- BOTÃO FLUTUANTE -->
 <div class="floating-buttons">
   <a href="https://wa.me/19971105358" class="whatsapp-float">
-  💬
-</a>
+    💬
+  </a>
+
+  <a href="mailto:mdnanitransportes@gmail.com?subject=Orçamento%20Transporte%20Refrigerado" class="gmail-float">
+    📧
+  </a>
+</div>
 
 </body>
 </html>
