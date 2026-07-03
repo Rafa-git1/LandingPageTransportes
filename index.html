@@ -3,8 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>M&D Nani Transportes</title>
+  <meta name="google-site-verification" content="Wca8WwqwSEArYvgXrmL0yNXzDM0FVyzDhuvbhUzc1Ks" />
+  <title>M&D Nani Transportes | Transporte de Cargas e Logística</title>
+  <meta name="description" content="A MDNani Transportes oferece soluções eficientes e seguras em transporte de cargas e logística. Faça sua cotação conosco e garanta agilidade na sua entrega.">
 
+  <link rel="canonical" href="https://mdnanitransportes.com.br/">
+
+  <!-- Configuração para os Robôs dos buscadores -->
+  <meta name="robots" content="index, follow">
+
+  <!-- TAGS OPEN GRAPH (Para o site ficar bonito quando for compartilhado no WhatsApp/Redes Sociais) -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="MDNani Transportes | Transporte de Cargas e Logística">
+  <meta property="og:description" content="Soluções eficientes e seguras em transporte de cargas e logística. Faça sua cotação!">
+  <meta property="og:url" content="https://mdnanitransportes.com.br/">
+  <meta property="og:image" content="https://mdnanitransportes.com.br/images/imagemVan.jpg">
   <!-- Bootstrap 5.3 & Icons -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
@@ -18,20 +31,47 @@
       --dark-card: #1a1a1a;
     }
 
-    body {
-      font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    /* Trava de segurança para evitar vazamento lateral no celular */
+    html, body {
+      max-width: 100%;
+      overflow-x: hidden;
       background-color: #fcfcfc;
       color: #333;
+      font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    body {
+      padding: 0;
+      margin: 0;
     }
 
     /* Hero Section */
     .hero {
       background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.85)),
-                  url('https://itapira.sp.gov.br/fotos/6640.jpg');
+                  url(images/imagemVan.jpg);
       background-size: cover;
       background-position: center;
-      background-attachment: fixed;
-      padding: 160px 0;
+      background-attachment: scroll; /* Scroll normal para mobile */
+      padding: 100px 0;
+      width: 100%;
+    }
+
+    @media (min-width: 768px) {
+      .hero {
+        padding: 160px 0;
+        background-attachment: fixed; /* Efeito parallax apenas no computador */
+      }
+    }
+
+    /* Responsividade inteligente para títulos grandes no mobile */
+    @media (max-width: 576px) {
+      .display-3 {
+        font-size: 2.2rem !important;
+        font-weight: 800;
+      }
+      .lead {
+        font-size: 1.1rem !important;
+      }
     }
 
     .text-yellow {
@@ -56,7 +96,7 @@
       color: #000;
     }
 
-    /* Cards de Serviços */
+    /* Cards de Serviços (Fundo limpo/claro) */
     .card-custom {
       border: none;
       border-radius: 12px;
@@ -122,13 +162,24 @@
     .whatsapp-color { background: #25d366; }
     .gmail-color { background: #ea4335; }
 
-    /* Footer / Contato */
+    /* Footer / Contato (Fundo limpo/claro) */
     .footer-info {
       background-color: #f4f4f4;
       border-radius: 12px;
       padding: 30px;
     }
   </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "M&D Nani Transportes",
+    "image": "https://mdnanitransportes.com.br/images/imagemVan.jpg",
+    "url": "https://mdnanitransportes.com.br/",
+    "telephone": "+5519971105358",
+    "priceRange": "$$"
+  }
+  </script>
 </head>
 <body>
 
@@ -137,8 +188,7 @@
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-lg-8">
-          <span class="text-uppercase tracking-wider text-yellow fw-bold small d-block mb-2">Logística Reversa e Comercial</span>
-          <h1 class="fw-extrabold display-3 mb-2">M&D Nani <span class="text-yellow">Transportes</span></h1>
+          <h1 class="display-3 mb-2 fw-extrabold">M&D Nani <span class="text-yellow">Transportes</span></h1>
           <p class="lead fs-4 fw-light text-light opacity-90 mb-4">
             Transporte Refrigerado com Rigor de Temperatura, Segurança e Pontualidade.
           </p>
@@ -146,7 +196,7 @@
             <p class="mb-0 text-white-50"><i class="bi bi-geo-alt-fill text-yellow me-2"></i>Campinas - SP</p>
             <p class="mb-0 text-white-50"><i class="bi bi-globe text-yellow me-2"></i>Atendimento em todo o Brasil</p>
           </div>
-          <a href="https://wa.me/19971105358" target="_blank" class="btn btn-yellow btn-lg mt-4 shadow">
+          <a href="https://wa.me/19971105358?text=Olá! Gostaria de solicitar um orçamento para transporte de carga." target="_blank" class="btn btn-yellow btn-lg mt-4 shadow">
             <i class="bi bi-whatsapp me-2"></i>Solicitar Orçamento Rápido
           </a>
         </div>
@@ -159,13 +209,39 @@
     <div class="row justify-content-center py-4">
       <div class="col-md-8">
         <h2 class="fw-bold position-relative mb-3">Sobre o Nosso Serviço</h2>
-        <div class="mx-auto bg-yellow" style="width: 60px; height: 3px; background-color: var(--primary-yellow);"></div>
+        <div class="mx-auto" style="width: 60px; height: 3px; background-color: var(--primary-yellow);"></div>
         <p class="mt-4 text-muted fs-5 leading-relaxed">
-          Operamos com frota de <strong>vans refrigeradas modernas e higienizadas</strong>, garantindo a integridade total da sua carga desde a coleta até a entrega final no prazo combinado.
+          Operamos com <strong>vans refrigeradas modernas e higienizadas</strong>, garantindo a integridade total da sua carga desde a coleta até a entrega final no prazo combinado.
         </p>
       </div>
     </div>
   </section>
+
+  <section class="py-5 bg-light border-top border-bottom">
+      <div class="container py-4">
+        <div class="text-center mb-5">
+          <span class="text-muted small text-uppercase fw-bold">Nossa Estrutura</span>
+          <h2 class="fw-bold text-dark mt-1">Capacidade Operacional</h2>
+        </div>
+        <div class="row g-4 justify-content-center">
+          <div class="col-md-5">
+            <div class="p-4 bg-white rounded-3 shadow-sm h-100">
+              <h5 class="fw-bold text-dark mb-3"><i class="bi bi-truck text-yellow me-2"></i> O Veículo</h5>
+              <p class="text-muted mb-2"><strong>Modelo:</strong> Utilitário / Van de Carga Urbana</p>
+              <p class="text-muted mb-0"><strong>Vantagem:</strong> Agilidade no trânsito urbano e facilidade para acessar docas e centros com restrição de caminhões grandes.</p>
+            </div>
+          </div>
+          <div class="col-md-5">
+            <div class="p-4 bg-white rounded-3 shadow-sm h-100">
+              <h5 class="fw-bold text-dark mb-3"><i class="bi bi-snow2 text-yellow me-2"></i> Controle Térmico</h5>
+              <p class="text-muted mb-2"><strong>Equipamento:</strong> Refrigeração acoplada e elétrica de alta performance.</p>
+              <p class="text-muted mb-2"><strong>Faixa de Operação:</strong> Controle rigoroso para cargas resfriadas e congeladas.</p>
+              <p class="text-muted mb-0"><strong>Monitoramento:</strong> Termômetro digital visível para constante checagem da temperatura durante todo o trajeto.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
   <!-- SERVIÇOS -->
   <section class="bg-light py-5 border-top border-bottom">
@@ -189,7 +265,7 @@
         <div class="col-6 col-md-3">
           <div class="card card-custom shadow-sm h-100">
             <div class="card-icon">🥦</div>
-            <h5 class="fw-bold fs-6 mb-0">Hortifruti (FLV)</h5>
+            <h5 class="fw-bold fs-6 mb-0">Hortifruti</h5>
           </div>
         </div>
         <div class="col-6 col-md-3">
@@ -227,12 +303,6 @@
           <div class="diff-box">
             <h5 class="fw-bold text-yellow"><i class="bi bi-shield-check me-2"></i>Veículo Higienizado</h5>
             <p class="text-white-50 small mb-0">Baú refrigerado limpo conforme as normas sanitárias vigentes do setor alimentício.</p>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="diff-box">
-            <h5 class="fw-bold text-yellow"><i class="bi bi-map me-2"></i>Cobertura Estratégica</h5>
-            <p class="text-white-50 small mb-0">Base em Campinas com pronto atendimento para todo o estado de SP e rotas nacionais.</p>
           </div>
         </div>
         <div class="col-md-4">
@@ -286,7 +356,7 @@
           <div class="p-4 bg-light rounded-4 border">
             <h4 class="fw-bold mb-3">Fale Conosco Diretamente</h4>
             <p class="text-muted small">Clique abaixo para iniciar uma conversa imediata no WhatsApp com o nosso setor operacional.</p>
-            <a href="https://wa.me/19971105358" target="_blank" class="btn btn-yellow btn-lg w-100 py-3 shadow-sm mb-2">
+            <a href="https://wa.me/19971105358?text=Olá! Gostaria de solicitar um orçamento para transporte de carga." target="_blank" class="btn btn-yellow btn-lg w-100 py-3 shadow-sm mb-2">
               <i class="bi bi-whatsapp me-2"></i>Chamar no WhatsApp
             </a>
             <a href="mailto:mdnanitransportes@gmail.com?subject=Orçamento%20Transporte%20Refrigerado" class="btn btn-outline-dark w-100 py-2 mt-2">
@@ -307,7 +377,7 @@
 
   <!-- BOTÕES FLUTUANTES FIXOS -->
   <div class="floating-container">
-    <a href="https://wa.me/19971105358" target="_blank" class="float-btn whatsapp-color" title="Fale no WhatsApp">
+    <a href="https://wa.me/19971105358?text=Olá! Gostaria de solicitar um orçamento para transporte de carga." target="_blank" class="float-btn whatsapp-color" title="Fale no WhatsApp">
       <i class="bi bi-whatsapp"></i>
     </a>
     <a href="mailto:mdnanitransportes@gmail.com?subject=Orçamento%20Transporte%20Refrigerado" class="float-btn gmail-color" title="Envie um E-mail">
